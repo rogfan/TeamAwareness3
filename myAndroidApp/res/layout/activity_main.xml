@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>  
+
+<!-- Defining the Activity as a Table-Layout -->
+<TableLayout   
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:id="@+id/tableLayout1"  
+	android:layout_width="match_parent"  
+	android:layout_height="match_parent"  
+	android:shrinkColumns="*"  
+	android:stretchColumns="*"
+	android:background="#000"   
+>
+<!-- Defining the First Line as the HeadLine -->
+	<TableRow  
+		android:id="@+id/tableRow4"  
+		android:layout_height="wrap_content"  
+		android:layout_width="match_parent"  
+		android:gravity="center_horizontal"
+	>  
+	    <TextView  
+	         android:id="@+id/overView"  
+	         android:layout_width="match_parent"  
+	         android:layout_height="wrap_content"  
+	         android:textStyle="bold"  
+	         android:typeface="serif"  
+	         android:textSize="18sp" 
+	         android:textColor="#FFF" 
+	         android:text = "@string/OverView"  
+	         android:gravity="center"
+	         android:padding="10dp"  
+	         android:layout_span="6">
+	     </TextView>
+     </TableRow>  
+        
+     <!-- Line Separator 1 --> 
+     <TableRow  
+          android:id="@+id/tableRow2"  
+          android:layout_height="wrap_content"  
+          android:layout_width="match_parent"
+          android:padding = "10dp"
+          android:background = "#000"
+      > 
+      </TableRow>
+      
+
+
+      <TableRow  
+           android:id="@+id/tableRow2"  
+           android:layout_height="wrap_content"  
+           android:layout_width="match_parent"
+           android:padding = "2dp"
+           android:background = "#AAA"
+       > 
+       </TableRow>
+        
+        
+       
+<!--Statusleiste BEGIN-->
+       <TableRow  
+           android:id="@+id/tableRow1"  
+           android:layout_height="wrap_content"  
+           android:layout_width="match_parent"
+           android:padding = "10dp"
+       >             
+	       <TextView  
+	           android:id="@+id/StatusTag"  
+	           android:text="statusTag"  
+	           android:textStyle="bold"  
+	           android:typeface="serif"
+	           android:textColor="#FFF">
+	       </TextView>  
+            
+           <TextView  
+               android:id="@+id/StatusMessage"  
+               android:text="statusMessage"  
+               android:textStyle="bold"  
+               android:typeface="serif"
+               android:width="150dip"
+               android:textColor="#FFF">
+           </TextView>  
+           
+           <TextView  
+               android:id="@+id/TextView04"  
+               android:text="   "  
+               android:textStyle="bold"  
+               android:typeface="serif">
+           </TextView> 
+            
+           <TextView  
+               android:id="@+id/StatusColor"  
+               android:background="#00ff00"
+               android:text= " "  
+               android:textStyle="bold"  
+               android:typeface="serif">
+           </TextView>      
+        </TableRow>  
+<!--Statusleiste END-->
+        
+        <TableRow  
+            android:id="@+id/tableRow2"  
+            android:layout_height="wrap_content"  
+            android:layout_width="match_parent"
+            android:padding = "0.5dp"
+            android:background = "#AAA"
+        > 
+        </TableRow>
+  
+ 
+                  
+        <TableRow  
+        	android:id="@+id/tableRow1"  
+       	 	android:layout_height="wrap_content"  
+        	android:layout_width="100dp"
+        	android:padding = "10dp"
+    	>
+            <TextView  
+                android:id="@+id/TextView04"  
+                android:text="  Uhrzeit:"  
+                android:textStyle="bold"  
+                android:typeface="serif"
+                android:textColor="#FFF">
+            </TextView>
+            
+            <TextView  
+                android:id="@+id/TimeVal"  
+                android:text="  08:00 - 17:00 "  
+                android:textStyle="bold"  
+                android:typeface="serif"
+                android:textColor="#FFF">
+            </TextView>
+  
+        </TableRow>
+             
+            <TableRow  
+            	android:id="@+id/tableRow1"  
+           	 	android:layout_height="wrap_content"  
+            	android:layout_width="fill_parent"
+            	android:padding = "10dp"
+        	>
+             <TextView  
+                android:id="@+id/TextView04"  
+                android:text="  Anmerkung:"  
+                android:textStyle="bold"  
+                android:typeface="serif"
+                android:textColor="#FFF">
+            </TextView>
+            
+            <TextView  
+                android:id="@+id/httpText"  
+                android:text="Keine Probleme heute"  
+                android:textStyle="bold"  
+                android:typeface="serif"
+                android:textColor="#FFF"
+                android:padding="3dp"
+                android:width="0dip"
+                >
+            </TextView>            
+         </TableRow>
+         
+         <TableRow  
+            android:id="@+id/tableRow2"  
+            android:layout_height="wrap_content"  
+            android:layout_width="match_parent"
+            android:padding = "2dp"
+            android:background = "#000"
+            android:width = "20dp"
+        > 
+        </TableRow>
+                    	
+            
+      <TableRow  
+	      android:id="@+id/tableRow2"  
+	      android:layout_height="wrap_content"  
+	      android:layout_width="match_parent"
+	      android:padding = "2dp"
+	      android:background = "#AAA"
+      > 
+</TableRow>
+
+<Button
+    android:id="@+id/switcher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Zurück" />
+
+</TableLayout>  

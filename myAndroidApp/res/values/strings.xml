@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Team Awareness</string>
+    <string name="dummyLoader">I load a dummy-profile!</string>
+
+    
+    <string name="OverView">Übersicht</string>
+    
+<!-- StatusLeiste -->
+<string name="statusTag">Status: </string>
+<string name="statusMessage">voll verfügbar</string>
+<string name="statusColorationGreen">#00ff00</string>
+
+<!-- Uhrzeit -->
+<string name="timeTag">Uhrzeit: </string>
+    
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnnotationField"
+        android:layout_below="@+id/NameField"
+        android:layout_marginTop="18dp"
+        android:text="Bemerkung"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/AnnotationField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/NameField"
+        android:layout_below="@+id/TextView01"
+        android:background="#fff"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/NameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:background="#fff"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="24dp"
+        android:text="Name"
+        android:textColor="#FFF" />
+
+    <CheckBox
+        android:id="@+id/fullyAvail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TimeField"
+        android:layout_below="@+id/TimeField"
+        android:layout_marginTop="31dp"
+        android:text="voll verfügbar"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/notavail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/temporaryAvail"
+        android:layout_below="@+id/temporaryAvail"
+        android:text="nicht verfügbar"
+        android:textColor="#fff" />
+
+    <CheckBox
+        android:id="@+id/temporaryAvail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullyAvail"
+        android:layout_below="@+id/fullyAvail"
+        android:text="halbtags verfügbar"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/AnnotationField"
+        android:layout_below="@+id/AnnotationField"
+        android:layout_marginTop="16dp"
+        android:text="Uhrzeit von bis"
+        android:textColor="#FFF" />
+
+    <EditText
+        android:id="@+id/TimeField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_below="@+id/TextView02"
+        android:background="#fff"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/savetocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/TextView01"
+        android:layout_below="@+id/notavail"
+        android:layout_marginTop="28dp"
+        android:text="Speichern" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/savetocal"
+        android:layout_alignRight="@+id/TimeField"
+        android:text="Zurück" />
+
+</RelativeLayout>
